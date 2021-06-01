@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const postAuth = require("../authRoutes/post");
-const getAuth=require('../authRoutes/get')
+const postAuth = require("../authRoutes/postSignUp");
+const getAuth=require('../authRoutes/postLogIn')
 
 app.use("/signup", postAuth);
 app.use('/login',getAuth)
